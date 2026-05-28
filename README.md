@@ -88,61 +88,33 @@ The application retrieves live weather data, displays a 5-day forecast, provides
 
 # Project Structure
 
-```txt
-weatherwise-ai-intern-assessment/
-├── backend/
-│   ├── main.py
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── app/
-│   │   ├── page.tsx
-│   │   ├── layout.tsx
-│   │   └── globals.css
-│   └── package.json
-│
-└── README.md
-```
+txt weatherwise-ai-intern-assessment/ ├── backend/ │   ├── main.py │   └── requirements.txt │ ├── frontend/ │   ├── app/ │   │   ├── page.tsx │   │   ├── layout.tsx │   │   └── globals.css │   └── package.json │ └── README.md 
 
 ---
 
 # Running the Backend
 
-```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
+bash cd backend python3 -m venv venv source venv/bin/activate pip install -r requirements.txt uvicorn main:app --reload 
 
 Backend runs at:
 
-```txt
-http://127.0.0.1:8000
-```
+txt http://127.0.0.1:8000 
 
 ---
 
 # Running the Frontend
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+bash cd frontend npm install npm run dev 
 
 Frontend runs at:
 
-```txt
-http://localhost:3000
-```
+txt http://localhost:3000 
 
 ---
 
 # Notes
 
-- The `.env` file is intentionally excluded from the repository for security purposes.
+- The .env file is intentionally excluded from the repository for security purposes.
 - API keys must be added locally before running the backend.
 - The SQLite database is generated automatically when the backend starts.
 
